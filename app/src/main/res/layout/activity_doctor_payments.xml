@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DoctorPayments"
+    android:id="@+id/linear"
+    android:background="#FDE1E1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/constraint"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="#DFEA7269"
+                    android:orientation="vertical"
+                    android:layout_height="280dp">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/paymentpor"/>
+
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:id="@+id/consu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/abril_fatface"
+                    android:text="Payment Section"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textColor="#DFEA7269"
+                    android:textSize="40dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:padding="10dp"
+                                android:orientation="vertical"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:textStyle="bold"
+                                    android:textAlignment="center"
+                                    android:text="Select Payment Mode :"
+                                    android:textSize="25dp" />
+
+                                <Spinner
+                                    android:id="@+id/paymentmode"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:padding="5dp"
+                                    android:spinnerMode="dialog"
+                                    android:textAlignment="center"
+                                    tools:ignore="TouchTargetSizeCheck" />
+
+                            </LinearLayout>
+
+                            <EditText
+                                android:id="@+id/upiid"
+                                android:hint="Enter upi id or card number "
+                                android:layout_width="350dp"
+                                android:layout_margin="5dp"
+                                android:layout_height="48dp"
+                                android:textColor="@color/black"
+                                android:background="@drawable/btn"
+                                android:inputType="numberDecimal"
+                                android:layout_gravity="center"
+                                android:textColorHint="#000000"
+                                android:drawableStart="@drawable/baseline_payment_24"
+                                android:drawablePadding="10dp"
+                                android:padding="10dp"
+                                android:textSize="20dp"
+
+                                />
+                            <TextView
+                                android:id="@+id/moneyinrs"
+                                android:hint="2050 /- "
+                                android:layout_width="350dp"
+                                android:layout_margin="5dp"
+                                android:layout_height="48dp"
+                                android:textColor="@color/black"
+                                android:background="@drawable/btn"
+                                android:layout_gravity="center"
+                                android:textColorHint="#000000"
+                                android:drawableStart="@drawable/rupee"
+                                android:drawablePadding="10dp"
+                                android:padding="10dp"
+                                android:textSize="20dp"
+
+                                />
+
+
+                            <Button
+                                android:id="@+id/makepayment"
+                                android:layout_width="150dp"
+                                android:layout_height="55dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_gravity="center"
+                                android:backgroundTint="#DFEA7269"
+                                android:text="Make Payment"
+                                android:layout_marginBottom="50dp"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

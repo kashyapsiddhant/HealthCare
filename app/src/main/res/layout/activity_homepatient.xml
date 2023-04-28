@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#FDE1E1"
+    android:layout_height="match_parent"
+    tools:context=".HomepatientActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#DFEA7269"
+        android:orientation="vertical"
+        android:layout_height="250dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/abril_fatface"
+            android:text="Welcome"
+            android:padding="20dp"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="52dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textAlignment="center"
+            android:text="Welcome to our Health Management App, your one-stop solution for tracking and improving your health."
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textColor="#F1EDED"
+
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose your health service"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:padding="15dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+
+            android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView
+            android:layout_gravity="center"
+            android:layout_width="120dp"
+            android:layout_margin="10dp"
+            android:layout_height="120dp"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="150dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="150dp"
+                android:layout_margin="0dp">
+
+                <ImageView
+                    android:id="@+id/bookings"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/checkbookings"
+                    android:scaleType="centerCrop"
+                    android:layout_height="match_parent">
+
+                </ImageView>
+            </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textbookings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Bookings"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                android:layout_width="120dp"
+                android:layout_margin="10dp"
+                android:layout_height="120dp"
+                app:cardBackgroundColor="@color/black"
+                app:cardCornerRadius="150dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="150dp"
+                    android:layout_margin="0dp">
+
+                    <ImageView
+                        android:id="@+id/consultation"
+                        android:layout_width="match_parent"
+                        android:src="@drawable/appointment"
+                        android:scaleType="centerCrop"
+                        android:layout_height="match_parent">
+
+                    </ImageView>
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textconsult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Consult"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                android:layout_width="120dp"
+                android:layout_margin="10dp"
+                android:layout_height="120dp"
+                app:cardBackgroundColor="@color/black"
+                app:cardCornerRadius="150dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="150dp"
+                    android:layout_margin="0dp">
+
+                    <ImageView
+                        android:id="@+id/pharmacy"
+                        android:layout_width="match_parent"
+                        android:src="@drawable/onlinemedi"
+                        android:scaleType="centerCrop"
+                        android:layout_height="match_parent">
+
+                    </ImageView>
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textpharmacy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Pharmacy"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:layout_gravity="center"
+                android:layout_width="120dp"
+                android:layout_margin="10dp"
+                android:layout_height="120dp"
+                app:cardBackgroundColor="@color/black"
+                app:cardCornerRadius="150dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="150dp"
+                    android:layout_margin="0dp">
+
+                    <ImageView
+                        android:id="@+id/myprofile"
+                        android:layout_width="match_parent"
+                        android:src="@drawable/myprofile"
+                        android:scaleType="centerCrop"
+                        android:layout_height="match_parent">
+
+                    </ImageView>
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+                <Button
+                    android:id="@+id/logoutpatient"
+                    android:layout_width="150dp"
+                    android:layout_gravity="right"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="40dp"
+                    android:backgroundTint="#DFEA7269"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Log Out"
+                    android:onClick="logout"
+                    android:layout_marginBottom="50dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+
+    </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

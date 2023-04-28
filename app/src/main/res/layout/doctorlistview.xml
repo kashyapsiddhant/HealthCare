@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#94FDE1E1"
+    android:layout_gravity="center"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="18dp"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/doc_pic"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:src="@drawable/femaledr" />
+
+    <TextView
+        android:id="@+id/doctor"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Doctor"
+        android:layout_marginStart="10dp"
+        android:textColor="#DFEA7269"
+        android:textSize="20dp"
+        android:gravity="center"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

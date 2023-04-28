@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDE1E1"
+    android:orientation="vertical"
+    tools:context=".DrAppointments">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:background="#DFEA7269"
+                    android:orientation="vertical"
+                    android:layout_height="350dp">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/consultvir"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/abril_fatface"
+                    android:text="Check Appointments"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+
+                    android:textColor="#DFEA7269"
+                    android:textSize="37dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:textAlignment="center"
+                        android:text="Enter your Name : "
+                        android:textSize="25dp" />
+
+                    <EditText
+                        android:id="@+id/drusername"
+                        android:layout_width="350dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/btn"
+                        android:drawableStart="@drawable/dr"
+                        android:drawablePadding="10dp"
+                        android:hint="Loading"
+                        android:padding="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#000000"
+                        android:textSize="20dp"
+
+                        />
+
+                    <Button
+                        android:id="@+id/getdata"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="#DFEA7269"
+                        android:text="Check My Appointments"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/abril_fatface"
+                        android:text="Appointment Details :"
+                        android:padding="10dp"
+                        android:layout_marginTop="50dp"
+                        android:textColor="#DFEA7269"
+                        android:textSize="25dp"
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:textAlignment="center"
+                        android:text="Doctor Name : "
+                        android:textSize="25dp" />
+
+                    <EditText
+                        android:id="@+id/drappoint"
+                        android:layout_width="350dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/btn"
+                        android:drawableStart="@drawable/dr"
+                        android:drawablePadding="10dp"
+                        android:hint="No Booking"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#000000"
+                        android:textSize="20dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:padding="5dp"
+                        android:text="Date Scheduled : "
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:id="@+id/drdate"
+                        android:layout_width="350dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/btn"
+                        android:drawableStart="@drawable/date"
+                        android:drawablePadding="10dp"
+                        android:hint="No Booking"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#000000"
+                        android:textSize="20dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:padding="5dp"
+                        android:text="Time Scheduled : "
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:id="@+id/drtime"
+                        android:layout_width="350dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/btn"
+                        android:drawableStart="@drawable/time"
+                        android:drawablePadding="10dp"
+                        android:hint="No Booking"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#000000"
+                        android:textSize="20dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:padding="5dp"
+                        android:text="Payment Mode : "
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:id="@+id/drpayment"
+                        android:layout_width="350dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/btn"
+                        android:drawableStart="@drawable/card"
+                        android:drawablePadding="10dp"
+                        android:hint="No Booking"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#000000"
+                        android:textSize="20dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:padding="5dp"
+                        android:text="UPI/Card/Netbanking Id : "
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:id="@+id/drupi"
+                        android:layout_width="350dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/btn"
+                        android:drawableStart="@drawable/card"
+                        android:drawablePadding="10dp"
+                        android:hint="No Booking"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#000000"
+                        android:textSize="20dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:padding="5dp"
+                        android:text="Amount : "
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:id="@+id/dramount"
+                        android:layout_width="350dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/btn"
+                        android:drawableStart="@drawable/rupee"
+                        android:drawablePadding="10dp"
+                        android:hint="No Booking"
+                        android:padding="5dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="#000000"
+                        android:textSize="20dp"
+                        android:layout_marginBottom="60dp"
+                        />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
